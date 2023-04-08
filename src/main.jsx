@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <AppwriteAuthUIProvider client={client} account={account}>
     <React.StrictMode>
       <App />
-    </React.StrictMode>,
+    </React.StrictMode>
     </AppwriteAuthUIProvider>
   </BrowserRouter>
 )
