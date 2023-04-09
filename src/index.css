@@ -13,6 +13,10 @@ body{
   background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
 }
 
+.link {
+  color: rgb(95, 200, 241);
+}
+
 .navbar__container{ 
   display: flex;
   justify-content: space-between;
@@ -38,3 +42,7 @@ body{
   background: #eee;
   color: #000;
 }
+
+/* CSS Utility classes */
+.h-screen{ height: 100vh; }
+.grid-center{ display: grid; place-items: center; }

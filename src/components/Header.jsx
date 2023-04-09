@@ -18,7 +18,7 @@ const Header = () => {
         onAuthError={(error) => {alert(error)}} 
         onAuthSuccess={ handleSignoutSuccess }
         >Sign out</SignoutButton>) :
-      <Link className='navbar__link'>Sign in</Link>}
+      <Link className='navbar__link' to="/sign-in">Sign in</Link>}
     </nav>
   )
 }

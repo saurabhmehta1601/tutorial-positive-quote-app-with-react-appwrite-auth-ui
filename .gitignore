@@ -1,3 +1,7 @@
+# yalc 
+.yalc
+yalc.lock
+
 # Logs
 logs
 *.log
