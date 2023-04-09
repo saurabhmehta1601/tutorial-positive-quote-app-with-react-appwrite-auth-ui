@@ -1,17 +1,20 @@
 import React from 'react'
 import { Button, EmailSignupForm, FormControl, FormList } from 'react-appwrite-auth-ui'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const SignupPage = () => {
   const [email, setEmail] = React.useState("")
   const [password, setPassword] = React.useState("")
 
+  const navigate = useNavigate()
+
   const onAuthError = (error) => {
-    console.log("error in signup" , error)
+    alert('user creation failed 💔')
   }
 
   const onAuthSuccess = (response) => {
-    console.log('success in email signup', response)
+    alert('user created successfully')
+    navigate('/')
   }
 
   return (
