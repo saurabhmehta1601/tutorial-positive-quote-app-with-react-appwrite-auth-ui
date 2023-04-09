@@ -43,10 +43,6 @@ body{
   color: #000;
 }
 
-/* CSS Utility classes */
-.h-screen{ height: 100vh; }
-.grid-center{ display: grid; place-items: center; }
-
 .loading__page {
   display: grid;
   place-items: center;
@@ -123,4 +119,22 @@ body{
   0% { transform: rotate(0deg) }
   100% { transform: rotate(360deg) }
 }
- 
+
+.quote__list{
+  padding: 1em 1.5em;
+  margin: 1em;
+  border-radius: 8px;
+  display: grid;
+  row-gap: 0.5em;
+  background-color: rgb(250, 242, 242);
+}
+
+.quote__item {
+  font-size: 0.8rem;
+  font-family: cursive;
+  color: #333;
+}
+
+/* CSS Utility classes */
+.h-screen{ height: 100vh; }
+.grid-center{ display: grid; place-items: center; }
