@@ -7,8 +7,9 @@ import { BrowserRouter } from 'react-router-dom'
 
 import {Client,Account} from "appwrite"
 import { AppwriteAuthUIProvider } from 'react-appwrite-auth-ui'
-const endpoint = "http://localhost:4321/v1"
-const projectId = "63ff40968cfee425c0ac"
+
+const endpoint = "http://localhost:4321/v1" // YOUR API ENDPOINT
+const projectId = "63ff40968cfee425c0ac"  // YOUR PROJECT ID
 
 const client  = new Client().setProject(projectId).setEndpoint(endpoint)
 const account = new Account(client)
@@ -16,9 +17,9 @@ const account = new Account(client)
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <AppwriteAuthUIProvider client={client} account={account}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
     </AppwriteAuthUIProvider>
   </BrowserRouter>
 )
